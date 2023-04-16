@@ -1,0 +1,215 @@
+Scanner class:Scanner is predefinied class in java which is available in java.util package.
+Scanner class is used to take input from user.
+
+steps:
+
+1) If we want to use Scanner class  then we have to create object of Scanner class.
+
+ Scanner sc=new Scanner(System.in);
+
+2) Import scannner class from java.util package.
+
+import java.util.Scanner;
+
+3)Methods in scanner class.
+
+1)nextInt();
+2)nextByte();
+3)nextDouble();
+4)nextfloat();
+
+
+4) wrong input (Input mismatch Exception)
+
+
+Example:
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class IntDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter int  value");
+
+		int a = sc.nextInt();
+
+		System.out.println("int value is:" + a);
+	}
+}
+
+
+2)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class FloatDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter float value");
+		
+		float no = sc.nextFloat();
+		
+		System.out.println("float value is:"+ no);
+		
+	}
+}
+
+
+3)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class DoubleDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter double value");
+
+		double d = sc.nextDouble();
+		
+		System.out.println("Double value is:"+d);
+	}
+}
+
+
+
+4)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class ByteDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter byte value");
+		byte b = sc.nextByte();
+
+		System.out.println("value is :" + b);
+
+	}
+}
+
+
+5)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class ShortDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter short value");
+
+		int s = sc.nextShort();
+		System.out.println("The value is:"+s);
+
+	}
+}
+
+
+6)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class LongDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter long value");
+		long l=sc.nextLong();
+		
+		System.out.println("the value is:"+l);
+	}
+}
+
+
+7)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class BooleanDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any boolean value");
+		boolean b=sc.nextBoolean();
+		System.out.println("Boolean value is:"+b);
+	}
+}
+
+
+8)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your name");
+		String name = sc.next();
+		System.out.println("The name is:"+ name);
+
+	}
+}
+
+
+
+9)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class CharDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any char");
+
+		char c = sc.next().charAt(0);
+		
+		System.out.println("The char is:"+c);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

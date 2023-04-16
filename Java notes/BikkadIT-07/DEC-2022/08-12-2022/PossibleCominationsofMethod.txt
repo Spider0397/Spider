@@ -1,0 +1,95 @@
+1)No arguments/parameters and No returntype
+
+Example : 
+
+package methodCombination;
+
+public class Addition {
+
+	public void add() {
+		
+		int a=10;
+		int b=20;
+		int c=a+b;
+		System.out.println(c);
+		
+	}
+
+	
+	public static void main(String[] args) {
+	
+		Addition a=new Addition();
+		a.add();
+	}
+}
+
+
+2) Method is taking input parameters or argument and return result
+
+Example :
+
+
+package methodCombination;
+
+public class Addition {
+
+	public int add(int a, int b) {
+		int c = a + b;
+		return c;
+	}
+
+	public static void main(String[] args) {
+
+		Addition a = new Addition();
+		int result = a.add(10, 20);
+		System.out.println(result);
+	}
+}
+
+
+
+3) Method is not taking any input parameter but return result.
+
+
+package methodCombination;
+
+public class Addition {
+
+	public int add() {
+		int a=10;
+		int b=20;
+		int c = a + b;
+		return c;
+	}
+
+	public static void main(String[] args) {
+
+		Addition a = new Addition();
+		int result = a.add();
+		System.out.println(result);
+	}
+}
+
+
+
+4) Method is taking input parameter and not return anything.
+
+
+package methodCombination;
+
+public class Addition {
+
+	public void add(int a,int b) {
+		
+		int c = a + b;
+		System.out.println(c);
+	}
+
+	public static void main(String[] args) {
+
+		Addition a = new Addition();
+		a.add(10,30);
+		
+	}
+}
+

@@ -1,0 +1,292 @@
+1) Single Inheritance :
+
+package singleinheritance;
+
+public class Parent {
+
+	public void m1() {
+		System.out.println("m1 method of Parent class");
+	}
+}
+
+
+
+package singleinheritance;
+
+public class Child extends Parent{
+
+	public void m2() {
+		System.out.println("m2 method of child class");
+	}
+	
+	public static void main(String[] args) {
+		
+		Child c=new Child();
+		c.m1();
+		c.m2();
+	}
+}
+
+
+2) Multilevel Inheritance 
+
+
+package multilevelInheritance;
+
+public class Parent {
+
+
+	public void m1() {
+		System.out.println("m1 method of Parent class");
+	}
+}
+
+
+package multilevelInheritance;
+
+public class Child1 extends Parent{
+
+	
+	public void m2() {
+		System.out.println("m2 method of child1 class");
+	}
+	
+	public static void main(String[] args) {
+		
+		Child1 c1=new Child1();
+		c1.m1();
+		c1.m2();
+		
+	}
+}
+
+
+
+package multilevelInheritance;
+
+public class Child2 extends Child1 {
+
+	public void m3() {
+		System.out.println("m3 method of Child2 class");
+	}
+
+	public static void main(String[] args) {
+
+		Child2 c2=new Child2();
+		c2.m1();
+		c2.m2();
+		c2.m3();
+		
+		
+	}
+}
+
+
+
+
+4)Multiple Inheritance :
+
+package multipleInheritance;
+
+public class Parent1 {
+
+	public void m1() {
+		System.out.println("m1 method of Parent 1 class");
+	}
+	
+	
+}
+
+
+package multipleInheritance;
+
+public class Parent1 {
+
+	public void m1() {
+		System.out.println("m1 method of Parent 1 class");
+	}
+	
+	
+}
+
+
+package multipleInheritance;
+
+public class Parent2 {
+
+	public void m1() {
+		System.out.println("m2 methid of Parent2 class");
+	}
+}
+
+
+
+4)Hierarichical inheritaance :
+
+package hierarichicalInheritance;
+
+public class Parent {
+
+	public void m1() {
+		System.out.println("m1 method of Parent class");
+	}
+}
+
+
+
+package hierarichicalInheritance;
+
+public class Child1 extends Parent {
+
+	public void m2() {
+		System.out.println("m2 method of Child1 class");
+	}
+	
+	public static void main(String[] args) {
+		
+		Child1 c1=new Child1();
+		c1.m1();
+		c1.m2();
+	}
+}
+
+
+package hierarichicalInheritance;
+
+public class Child2 extends Parent {
+
+	public void m3() {
+		System.out.println("m3 method of Child 3 class");
+	}
+	
+	public static void main(String[] args) {
+		
+		Child2 c2=new Child2();
+		c2.m1();
+		c2.m3();
+	}
+}
+
+
+package hierarichicalInheritance;
+
+public class Child3 extends Parent{
+
+	public void m4() {
+		System.out.println("m4 method of Child3 class");
+	}
+	
+	public static void main(String[] args) {
+		
+		Child3 c3=new Child3();
+		c3.m4();
+		c3.m1();
+	}
+}
+
+
+5)Hybrid Inheritance:
+
+package hybridInheritance;
+
+public class Parent {
+
+	public void m1() {
+		System.out.println("m1 method Parent class");
+	}
+}
+
+
+package hybridInheritance;
+
+public class Child1 extends Parent {
+
+	public void m2() {
+		System.out.println("m2 method of Child1");
+	}
+}
+
+
+package hybridInheritance;
+
+public class Child2 extends Child1{
+
+	public void m3() {
+		System.out.println("m3 method of Child2 class");
+	}
+	
+	public static void main(String[] args) {
+		
+		Child2 c2=new Child2();
+		c2.m1();
+		c2.m2();
+		c2.m3();
+	}
+}
+
+
+
+package hybridInheritance;
+
+public class Child11 extends Parent {
+
+	public void m4() {
+		System.out.println("m4 method of Child11 classs");
+	}
+	
+	public static void main(String[] args) {
+		
+		Child11 c11=new Child11();
+		c11.m1();
+		c11.m4();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

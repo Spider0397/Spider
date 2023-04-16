@@ -1,0 +1,233 @@
+Example 1:
+
+package toStringMethod;
+
+public class Student {
+
+	private int rollno;
+	
+	private String name;
+	
+	private String address;
+	
+	
+	public static void main(String[] args) {
+		
+		Student stu=new Student();
+		stu.rollno=111;
+		stu.name="Santosh";
+		stu.address="Pune";
+		
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+		System.out.println(stu.address);
+		
+		
+		Student stu1=new Student();
+		stu1.rollno=222;
+		stu1.name="Vikas";
+		stu1.address="Beed";
+		
+		System.out.println(stu1.rollno);
+		System.out.println(stu1.name);
+		System.out.println(stu1.address);
+	}
+	
+}
+
+
+
+Example 2:
+
+package toStringMethod;
+
+public class Student {
+
+	private int rollno;
+
+	private String name;
+
+	private String address;
+
+	public void display() {
+		System.out.println(rollno);
+		System.out.println(name);
+		System.out.println(address);
+
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		stu.address = "Pune";
+
+		stu.display();
+
+		Student stu1 = new Student();
+		stu1.rollno = 222;
+		stu1.name = "Vikas";
+		stu1.address = "Beed";
+
+		stu1.display();
+	}
+
+}
+
+
+Example :
+
+package toStringMethod;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	String address;
+
+	public String display() {
+
+		return "RollNo: " + rollno + " name:" + name + " address : " + address;
+
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		stu.address = "Pune";
+
+		System.out.println(stu.display());
+
+		Student stu1 = new Student();
+		stu1.rollno = 222;
+		stu1.name = "Vikas";
+		stu1.address = "Beed";
+
+		System.out.println(stu1.display());
+	}
+
+}
+
+
+
+Example :
+
+
+package toStringMethod;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	String address;
+
+	public String toString() {
+
+		return "RollNo: " + rollno + " name:" + name + " address : " + address;
+
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		stu.address = "Pune";
+
+		System.out.println(stu.toString());
+
+		Student stu1 = new Student();
+		stu1.rollno = 222;
+		stu1.name = "Vikas";
+		stu1.address = "Beed";
+
+		System.out.println(stu1.toString());
+	}
+
+}
+
+
+
+Example :
+
+package toStringMethod;
+
+public class Student {
+
+	int rollno;
+	String name;
+    String address;
+
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", name=" + name + ", address=" + address + "]";
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		stu.address = "Pune";
+
+		System.out.println(stu.toString());
+
+		Student stu1 = new Student();
+		stu1.rollno = 222;
+		stu1.name = "Vikas";
+		stu1.address = "Beed";
+
+		System.out.println(stu1.toString());
+	}
+
+}
+
+
+
+Example :
+
+
+package toStringMethod;
+
+public class Student {
+
+	int rollno;
+	String name;
+    String address;
+
+	
+
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", name=" + name + ", address=" + address + "]";
+	}
+
+
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		stu.address = "Pune";
+
+		System.out.println(stu);
+
+		Student stu1 = new Student();
+		stu1.rollno = 222;
+		stu1.name = "Vikas";
+		stu1.address = "Beed";
+
+		System.out.println(stu1.toString());
+	}
+
+}
+
+
+
+

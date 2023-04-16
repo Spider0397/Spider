@@ -1,0 +1,508 @@
+Control Statement:
+
+Types Of Control Statement:
+
+
+1)DecisionMaking Statement.(Selection Statement)
+
+  1)if Statement
+  2)if else Statement
+  3)if else ladder
+  4)nested if 
+  5)switch statement
+
+   
+2)Iterative Statement.(Looping Statement)
+
+  1)for loop
+  2)while loop
+  3)do while loop
+  4)forEach loop
+
+
+1)DecisionMaking Statement.(Selection Statement)
+
+
+  1)if Statement: It is used when we want test condition.
+
+  syntax: if(condition){
+          ---------------          
+          }
+
+ Example:
+
+   package decisionMakingStatement;
+
+import java.util.Scanner;
+
+public class IfDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any number");
+		int number=sc.nextInt();
+		
+		if(number >=10) {
+			System.out.println("Number is greater than 10");
+			
+		}
+		
+		
+		
+		
+	}
+}
+
+
+  2)if else Statement : It is used when we want to execute either if statement or else statement for single condition.
+
+  Syntax: 
+           if(condition){
+            -------------------
+           }else{
+           --------------------
+          }
+
+Example :
+
+package decisionMakingStatement;
+
+import java.util.Scanner;
+
+public class IfElseDemo {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter any Number");
+		
+		int number=sc.nextInt();
+		if(number >=0) {
+			System.out.println("Positive Number");
+			
+		}else {
+			System.out.println("Negative Number");
+		}
+		
+		
+	}
+}
+
+
+
+Example :
+
+package decisionMakingStatement;
+
+import java.util.Scanner;
+
+public class IfElseDemo {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter your age ");
+		
+		int age=sc.nextInt();
+		if(age >=18) {
+			System.out.println("You are eligible for voting");
+			
+		}else {
+			System.out.println("You are not eligible for Voting ");
+		}
+		
+		
+	}
+}
+
+
+ 3)if else ladder :
+  =================
+
+if(condition){
+-------------
+}else if(condition){
+-------------
+}else if(condition){
+--------------
+}else{
+---------
+}
+
+
+Example :
+
+
+package decisionMakingStatement;
+
+import java.util.Scanner;
+
+public class IfElseLadder {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Your marks");
+		int marks = sc.nextInt();
+		if (marks > 100) {
+			System.out.println("Invalid input");
+		}	else if (marks >= 80) {
+			System.out.println("You are Topper");
+		} else if (marks < 80 && marks >= 60) {
+			System.out.println("You are in First class");
+		} else if (marks < 60 && marks >= 40) {
+			System.out.println("You are in Second class");
+		} else {
+			System.out.println("You are not eligible for taking admission in next class");
+		}
+
+	}
+}
+
+
+
+5)Switch case: When we have multiple choices among these multiple choices if we want to choose one choice then we should go for switch case.
+
+Syntax :
+
+switch(choice){
+
+case 1:
+   break;
+case 2:
+  break;
+case 3:
+  break;
+default:
+ break;
+
+}
+
+
+Example :
+
+
+package decisionMakingStatement;
+
+import java.util.Scanner;
+
+public class SwitchCaseDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter your choice");
+		System.out.println("Press 1 for case 1");
+		System.out.println("press 2 for case 2");
+		System.out.println("Press 3 for case 3");
+		System.out.println("Press 4 for case 4");
+
+		int choice = sc.nextInt();
+
+		switch (choice) {
+
+		case 1:
+			System.out.println("This is case 1");
+			break;
+
+		case 2:
+			System.out.println("This is case 2");
+			break;
+		case 3:
+			System.out.println("This is case 3");
+			break;
+		case 4:
+			System.out.println("This is case 4");
+			break;
+		default:
+			System.out.println("Invalid choice");
+			break;
+		}
+
+	}
+
+}
+
+
+Example : ATM
+
+package decisionMakingStatement;
+
+import java.util.Scanner;
+
+public class ATM {
+
+	public static void main(String[] args) {
+
+		System.out.println("Welcome to SBI bank ATM Service");
+
+		System.out.println("Press 1 for balance enquiry");
+		System.out.println("Press 2 for Deposit");
+		System.out.println("Press 3 for withdraw");
+		System.out.println("Press 4 for mini statement");
+
+		Scanner sc = new Scanner(System.in);
+
+		int ch = sc.nextInt();
+		switch (ch) {
+
+		case 1: System.out.println("You balance is 1000 rs");
+			break;
+		case 2: System.out.println("Deposit successful");
+			break;
+
+		case 3:System.out.println("Withdraw successful");
+			break;
+
+		case 4:System.out.println("Your mini statement is sent to your mail id");
+			break;
+		default:
+			System.out.println("Invlaid choice");
+			break;
+
+		}
+
+	}
+}
+
+
+
+  4)nested if : When we use if else block inside if block and another if else block inside else block .
+
+  Syntax : if(condition){
+     
+           if(condition){
+        
+           }else{
+
+            }
+          }else{
+            
+           if(condition){
+           
+          }else {
+         
+       }
+     
+          }
+
+Example 1:
+
+
+package decisionMakingStatement;
+
+public class NestedIf {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 2;
+		int c = 50;
+
+		if (a > b) {
+
+			if (a > c) {
+				System.out.println(a);
+			} else {
+
+			}
+
+		} else {
+
+			if (b > c) {
+				System.out.println(b);
+			} else {
+				System.out.println(c);
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+
+Example 2:
+
+package decisionMakingStatement;
+
+public class NestedIf {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 2;
+		int c = 50;
+
+		if (a > b) {
+
+			if (a > c) {
+				System.out.println(a);
+			} else {
+
+				System.out.println(c);
+			}
+
+		} else {
+
+			if (b > c) {
+				System.out.println(b);
+			} else {
+				
+			}
+		}
+
+	}
+}
+
+
+
+Assignment : Find minimum no from three numbers
+
+
+2)Iterative Statement.(Looping Statement)
+
+  1)for loop
+  2)while loop
+  3)do while loop
+  4)forEach loop
+
+
+
+Example : Without looping Statement
+
+package loopingStatement;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Welocme To BikkadIT");
+		System.out.println("Welocme To BikkadIT");
+		System.out.println("Welocme To BikkadIT");
+		System.out.println("Welocme To BikkadIT");
+		System.out.println("Welocme To BikkadIT");
+		
+		System.out.println("Welocme To BikkadIT");
+		System.out.println("Welocme To BikkadIT");
+		System.out.println("Welocme To BikkadIT");
+		System.out.println("Welocme To BikkadIT");
+		System.out.println("Welocme To BikkadIT");
+	
+		
+}
+}
+
+
+
+Example : With loop Statement
+
+
+package loopingStatement;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		
+		for(int i=0;i<10;i++) {
+			System.out.println("Welcome to BikkadIT");
+		}
+	
+}
+}
+
+
+
+
+1)for loop:   
+===========
+
+Syntax :
+
+for(initialization : condition : inc/dec){
+-----------------
+}
+
+
+Example 1:
+
+package loopingStatement;
+
+public class ForLoopDemo {
+
+	public static void main(String[] args) {
+		
+		for(int i=0;i<5;i++) {
+			System.out.println("Welcome To BikkadIT");
+		}
+		
+		
+	}
+}
+
+
+
+Example 2:
+
+package loopingStatement;
+
+public class ForLoopDemo {
+
+	public static void main(String[] args) {
+		
+	
+		for(int i=1;i<=10;i++) {
+			System.out.println(i);
+		}
+		
+	}
+}
+
+
+
+Example 2:
+
+package loopingStatement;
+
+public class ForLoopDemo {
+
+	public static void main(String[] args) {
+		
+	
+		for(int i=10;i>=1;i--) {
+			System.out.println(i);
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

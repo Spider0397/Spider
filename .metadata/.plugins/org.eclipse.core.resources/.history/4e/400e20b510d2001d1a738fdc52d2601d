@@ -1,0 +1,11 @@
+package Scannerdemo;
+
+import java.util.Scanner;
+public class Scannerdemo {
+
+	Scanner sc= new Scanner(System.in);
+
+	syso
+
+	}
+}

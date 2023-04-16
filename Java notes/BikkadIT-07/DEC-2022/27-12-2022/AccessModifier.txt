@@ -1,0 +1,370 @@
+Access Modifiers:
+
+1)private
+2)default
+3)protected
+4)public
+
+1)private:
+
+Example 1:
+
+package aCcessModifier1;
+
+public class A {
+
+	private int i = 10;
+
+	private void m1() {
+		System.out.println("m1 method");
+	}
+
+	public static void main(String[] args) {
+   
+		 A a =new A();
+		 System.out.println(a.i);
+		 a.m1();
+		
+	}
+
+}
+
+
+Example 2:
+
+
+package aCcessModifier1;
+
+public class A {
+
+	private int i = 10;
+
+	private void m1() {
+		System.out.println("m1 method");
+	}
+
+
+
+}
+
+
+package aCcessModifier1;
+
+public class B {               
+
+	public static void main(String[] args) {
+		   
+		 A a =new A();
+		 System.out.println(a.i);  // we cant access
+		 a.m1();  // we cant access
+		
+	}
+}
+
+
+
+2) Default Access Modifier:
+
+Example 1:
+
+
+package aCcessModifier1;
+
+public class A {
+
+	 int i = 10;
+
+	 void m1() {
+		System.out.println("m1 method");
+	}
+
+	public static void main(String[] args) {
+   
+		 A a =new A();
+		 System.out.println(a.i);
+		 a.m1();
+		
+	}
+
+}
+
+
+Example 2:
+
+
+package aCcessModifier1;
+
+public class A {
+
+	 int i = 10;
+
+	 void m1() {
+		System.out.println("m1 method");
+	}
+
+}
+
+
+package aCcessModifier1;
+
+public class B {
+
+	public static void main(String[] args) {
+		   
+		 A a =new A();
+		 System.out.println(a.i);
+		 a.m1();
+		
+	}
+}
+
+
+
+Example 3:
+
+
+package aCcessModifier1;
+
+public class A {
+
+	 int i = 10;
+
+	 void m1() {
+		System.out.println("m1 method");
+	}
+
+}
+
+
+
+package aCcessModifier2;
+
+import aCcessModifier1.A;
+
+public class C {
+
+	public static void main(String[] args) {
+		
+		A a=new A();   // we cant access
+		System.out.println(a.i);  // we cant access
+		a.m1();
+	}
+}
+
+
+
+
+3)protected:
+===========
+
+Exmple 1:
+
+
+package aCcessModifier1;
+
+public class A {
+
+  protected int i = 10;
+
+	protected  void m1() {
+		System.out.println("m1 method");
+	}
+
+	public static void main(String[] args) {
+   
+		 A a =new A();
+		 System.out.println(a.i);
+		 a.m1();
+		
+	}
+
+}
+
+
+Example 2:
+
+package aCcessModifier1;
+
+public class A {
+
+  protected int i = 10;
+
+	protected  void m1() {
+		System.out.println("m1 method");
+	}
+
+	
+
+}
+
+
+package aCcessModifier1;
+
+public class B {
+
+	public static void main(String[] args) {
+		   
+		 A a =new A();
+		 System.out.println(a.i);
+		 a.m1();
+		
+	}
+}
+
+
+Example 3:
+
+package aCcessModifier1;
+
+public class A {
+
+  protected int i = 10;
+
+	protected  void m1() {
+		System.out.println("m1 method");
+	}
+
+}
+
+
+
+package aCcessModifier2;
+
+import aCcessModifier1.A;
+
+public class C extends A {
+
+	public static void main(String[] args) {
+		
+		C c=new C();
+		System.out.println(c.i);
+		c.m1();
+		
+	}
+}
+
+
+
+Example : When we make deafult access modifier for class.
+
+
+
+package aCcessModifier1;
+
+class A {
+
+  protected int i = 10;
+
+	protected  void m1() {
+		System.out.println("m1 method");
+	}
+
+}
+
+
+
+package aCcessModifier2;
+
+import aCcessModifier1.A;
+
+public class C  {
+
+	public static void main(String[] args) {
+		
+		A a=new A();  // we cant access here
+		
+	}
+}
+
+
+
+
+
+4)public :
+==========
+
+Example 1:
+
+package aCcessModifier1;
+
+public class A {
+
+  public int i = 10;
+
+	public  void m1() {
+		System.out.println("m1 method");
+	}
+
+	public static void main(String[] args) {
+   
+		 A a =new A();
+		 System.out.println(a.i);
+		 a.m1();
+		
+	}
+
+}
+
+
+Example 2:
+
+package aCcessModifier1;
+
+public class A {
+
+  public int i = 10;
+
+	public  void m1() {
+		System.out.println("m1 method");
+	}
+
+
+}
+
+
+
+package aCcessModifier1;
+
+public class B {
+
+	public static void main(String[] args) {
+		   
+		 A a =new A();
+		 System.out.println(a.i);
+		 a.m1();
+		
+	}
+}
+
+
+Example 3:
+
+
+package aCcessModifier2;
+
+import aCcessModifier1.A;
+
+public class C {
+
+	public static void main(String[] args) {
+		
+		A a=new A();
+		System.out.println(a.i);
+		a.m1();
+	}
+}
+
+
+package aCcessModifier1;
+
+public class A {
+
+  public int i = 10;
+
+	public  void m1() {
+		System.out.println("m1 method");
+	}
+
+
+}
+

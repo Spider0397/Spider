@@ -1,0 +1,103 @@
+For Each loop:  It is only used with Array or Collection.
+==============
+
+for(data_Type refname:array_name){
+
+}
+
+Example 1:
+
+package basicsOfArray;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		int a[] = new int[5];
+		a[0] = 10;
+		a[1] = 20;
+		a[2] = 30;
+		a[3] = 40;
+		a[4] = 50;
+
+		System.out.println(a[0]);
+		System.out.println(a[1]);
+		System.out.println(a[2]);
+		System.out.println(a[3]);
+		System.out.println(a[4]);
+
+	}
+}
+
+
+Example :
+
+package basicsOfArray;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		int a[] = new int[5];
+		a[0] = 10;
+		a[1] = 20;
+		a[2] = 30;
+		a[3] = 40;
+		a[4] = 50;
+
+	for(int i=0;i<5;i++) {
+		System.out.println(a[i]);
+	}
+		
+		
+	}
+}
+
+
+
+Example :
+
+
+package basicsOfArray;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		int a[] = new int[5];
+		a[0] = 10;
+		a[1] = 20;
+		a[2] = 30;
+		a[3] = 40;
+		a[4] = 50;
+
+	for(int a1:a) {
+		System.out.println(a1);
+	}
+		
+	}
+}
+
+
+
+Example:
+
+package basicsOfArray;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		String a[] = new String[5];
+		a[0] = "Santosh";
+		a[1] = "Bikkad";
+		a[2] = "IT";
+		a[3] = "Pune";
+		a[4] = "Java";
+
+	for(String a1:a) {
+		System.out.println(a1);
+	}
+		
+	}
+}

@@ -1,0 +1,335 @@
+Example :
+
+package toStringMethod;
+
+public class Student {
+
+	int rollno;
+	String name;
+	String address;
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		stu.address = "Pune";
+
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+		System.out.println(stu.address);
+		
+		Student stu1 = new Student();
+		stu1.rollno = 222;
+		stu1.name = "Vikas";
+		stu1.address = "Beed";
+		
+		System.out.println(stu1.rollno);
+		System.out.println(stu1.name);
+		System.out.println(stu1.address);
+	}
+
+}
+
+
+Example :
+
+package toStringMethod;
+
+public class Student {
+
+	int rollno;
+	String name;
+	String address;
+
+	
+}
+
+
+
+package toStringMethod;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		stu.address = "Pune";
+
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+		System.out.println(stu.address);
+		
+		Student stu1 = new Student();
+		stu1.rollno = 222;
+		stu1.name = "Vikas";
+		stu1.address = "Beed";
+		
+		System.out.println(stu1.rollno);
+		System.out.println(stu1.name);
+		System.out.println(stu1.address);
+	}
+
+}
+
+
+
+Example :
+
+package toStringMethod;
+
+public class Student {
+
+	private int rollno;
+	private String name;
+	private String address;
+	public int getRollno() {
+		return rollno;
+	}
+	public void setRollno(int rollno) {
+		this.rollno = rollno;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	
+	
+	
+	
+
+}
+
+
+
+package toStringMethod;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		   stu.setRollno(111);
+		   stu.setName("Santosh");
+		   stu.setAddress("Pune");
+		   System.out.println(stu.getRollno());
+		   System.out.println(stu.getName());
+		   System.out.println(stu.getAddress());
+		   
+		
+		Student stu1 = new Student();
+		stu1.setRollno(111);
+		stu1.setName("Vikas");
+		stu1.setAddress("Pune");
+		
+		
+		  System.out.println(stu1.getRollno());
+		   System.out.println(stu1.getName());
+		   System.out.println(stu1.getAddress());
+		   
+		
+	}
+
+}
+
+
+
+Example :
+
+package toStringMethod;
+
+public class Student {
+
+	private int rollno;
+	private String name;
+	private String address;
+	public int getRollno() {
+		return rollno;
+	}
+	public void setRollno(int rollno) {
+		this.rollno = rollno;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", name=" + name + ", address=" + address + "]";
+	}
+	
+	
+	
+	
+	
+
+}
+
+
+
+package toStringMethod;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		   stu.setRollno(111);
+		   stu.setName("Santosh");
+		   stu.setAddress("Pune");
+		 System.out.println(stu);
+		
+		Student stu1 = new Student();
+		stu1.setRollno(111);
+		stu1.setName("Vikas");
+		stu1.setAddress("Pune");
+		System.out.println(stu1);
+		
+	}
+
+}
+
+
+
+Example :
+
+package toStringMethod;
+
+public class Student {
+
+	private int rollno;
+	private String name;
+	private String address;
+	public int getRollno() {
+		return rollno;
+	}
+	public void setRollno(int rollno) {
+		this.rollno = rollno;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", name=" + name + ", address=" + address + "]";
+	}
+	
+	
+	
+	
+	
+
+}
+
+
+
+package toStringMethod;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		   stu.setRollno(111);
+		   stu.setName("Santosh");
+		   stu.setAddress("Pune");
+		 System.out.println(stu.getName());
+		
+		Student stu1 = new Student();
+		stu1.setRollno(111);
+		stu1.setName("Vikas");
+		stu1.setAddress("Pune");
+		
+		System.out.println(stu1.getName());
+		
+	}
+
+}
+
+
+
+Example :
+
+package toStringMethod;
+
+public class Student {
+
+	private int rollno;
+	private String name;
+	private String address;
+
+	
+	
+	public Student(int rollno, String name, String address) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+		this.address = address;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", name=" + name + ", address=" + address + "]";
+	}
+	
+	
+	
+	
+	
+
+}
+
+
+
+package toStringMethod;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+
+		Student stu = new Student(111,"Santosh","Pune");
+		 System.out.println(stu);
+		
+		Student stu1 = new Student(222,"Ganesh","Beed");
+	System.out.println(stu1);
+		
+		
+	}
+
+}
+

@@ -1,0 +1,6 @@
+package Scannerdemo;
+
+public class Scanner {
+
+	Scanner sc
+}

@@ -1,0 +1,8 @@
+package Scannerdemo;
+
+
+public class Scannerdemo {
+
+	Scanner sc= new Scanner(System.in);
+	
+}

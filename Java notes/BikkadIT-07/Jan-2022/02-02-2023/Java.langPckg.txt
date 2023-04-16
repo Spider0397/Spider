@@ -1,0 +1,75 @@
+java.lang Package:
+=================
+ It is bydefault available .There is no need to import java.lang pckg 
+while using the class of this pckg.
+
+Example :
+
+package diffrentClassInJavalangPckg;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		String s = new String();
+
+		StringBuffer sb = new StringBuffer();
+
+		StringBuilder sb1 = new StringBuilder();
+
+		ArrayList al=new ArrayList();
+	}
+}
+
+
+
+
+String:
+=======
+String ids predefinied class available in java.lang package.
+String is nothing but collection of charactors.
+we can store alphabets and numbers in String.
+
+Note : Garbage collector is not responcible to access scp(String constant pool) area .
+hence garbage collector will destory only heap area object.
+
+
+There are two ways to create String Object.
+
+1)String literal.
+2)By Using new Keyword.
+
+1)String Literal :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

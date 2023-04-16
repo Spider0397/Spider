@@ -1,0 +1,136 @@
+DataType:
+
+byte 
+short
+int 
+long
+float
+double
+char
+boolean
+
+
+
+
+1) byte 
+
+Example :
+
+package diffrentdataTypes;
+
+public class ByteDemo {
+
+	public static void main(String[] args) {
+		
+		//range  -128 to +127
+		byte b= 127;
+		System.out.println(b);
+	}
+}
+
+
+
+2)short:
+
+Example :
+
+
+package diffrentdataTypes;
+
+public class ShortDemo {
+
+	public static void main(String[] args) {
+		// range -32768 to +32767
+		short s=32767;
+		System.out.println(s);
+	}
+}
+
+
+
+3) int :
+
+Example :
+
+
+package diffrentdataTypes;
+
+public class IntDemo {
+
+	public static void main(String[] args) {
+		
+		// -2147483648 to 2147483647
+		
+		int i=2147483647;
+		System.out.println(i);
+		
+	}
+}
+
+
+
+
+4) long:
+
+
+package diffrentdataTypes;
+
+public class LongDemo {
+
+	public static void main(String[] args) {
+
+		//range -9223372036854775808 to 9223372036854775807
+		long l = -9223372036854775808l;
+		System.out.println(l);
+	}
+}
+
+
+default values of data Types:
+
+
+package diffrentdataTypes;
+
+public class DefaultValuesOfDataType {
+
+	static byte b;
+	static short s;
+	static int i;
+	static long l;
+
+	public static void main(String[] args) {
+
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(i);
+		System.out.println(l);
+
+	}
+}
+
+
+Example :
+
+package diffrentdataTypes;
+
+public class DefaultValuesOfDataType {
+
+	static byte b=11;
+	static short s=909;
+	static int i=77874;
+	static long l=47649876987l;
+
+	public static void main(String[] args) {
+
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(i);
+		System.out.println(l);
+
+	}
+}
+
+
+
+
+

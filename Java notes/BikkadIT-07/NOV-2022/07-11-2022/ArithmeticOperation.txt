@@ -1,0 +1,129 @@
+1)
+
+package addition;
+
+public class TwoNoAdd {
+
+	public static void main(String args[]) {
+
+		int a = 10;
+		int b = 20;
+		int c = a + b;
+		System.out.println(c);
+
+	}
+}
+
+
+2)
+
+package addition;
+
+public class ThreeNoAddition {
+
+	public static void main(String args[]) {
+		int a=10;
+		int b=20;
+		int c=30;
+		int d=a+b+c;
+		System.out.println(d);
+	}
+}
+
+
+3)
+
+package subtraction;
+
+public class TwoNoSub {
+
+	public static void main(String args[]) {
+		
+		int x=30;
+		int y=20;
+		int z=x-y;
+		System.out.println(z);
+	}
+}
+
+
+4)
+
+package subtraction;
+
+public class ThreeNoSub {
+
+	public static void main(String args[]) {
+		
+		int r=60;
+		int x=30;
+		int y=10;
+		int z=r-x-y;
+		System.out.println(z);
+	}
+}
+
+
+5)
+
+package multiplication;
+
+public class TwoNoMul {
+
+	public static void main(String args[]) {
+		
+		int a=10;
+		int b=20;
+		int c=a*b;
+		System.out.println(c);
+	}
+}
+
+
+6)
+
+package multiplication;
+
+public class ThreeNoMul {
+
+	public static void main(String args[]) {
+		int a=10;
+		int b=20;
+		int c=30;
+		int d=a*b*c;
+		System.out.println(d);
+	}
+}
+
+
+7)
+
+package division;
+
+public class TwoNoDiv {
+
+	public static void main(String[] args) {
+		
+		int a=20;
+		int b=2;
+		int c=a/b;
+		System.out.println(c);
+	}
+}
+
+8)
+
+package division;
+
+public class ThreeNoDiv {
+
+	
+public static void main(String[] args) {
+		
+		int a=100;
+		int b=10;
+		int c=2;
+		int d=a/b/c;
+		System.out.println(d);
+	}
+}

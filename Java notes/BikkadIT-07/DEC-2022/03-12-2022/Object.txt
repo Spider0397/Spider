@@ -1,0 +1,74 @@
+Object : Seperate copy of memory is nothing but Object.
+
+
+Syntax: Class_Name ref_Name=new CLass_Name();
+
+Example :
+
+package object;
+
+public class Student {
+
+	int rollno;
+
+	String name;
+
+	String address;
+	
+	public static void main(String[] args) {
+	
+		Student stu1=new Student();
+		stu1.rollno=1;
+		stu1.name="Santosh";
+		stu1.address="Pune";
+		
+		System.out.println(stu1.rollno);
+		System.out.println(stu1.name);
+		System.out.println(stu1.address);
+		
+		Student stu2=new Student();
+		stu2.rollno=2;
+		stu2.name="Viaks";
+		stu2.address="Nashik";
+		System.out.println(stu2.rollno);
+		System.out.println(stu2.name);
+		System.out.println(stu2.address);
+		
+	}
+	
+}
+
+
+Example 2:
+
+package object;
+
+public class Student {
+
+	int rollno;
+
+	String name;
+
+	String address;
+	
+	public static void main(String[] args) {
+	
+		Student stu1=new Student();
+		stu1.rollno=1;
+		stu1.name="Santosh";
+		stu1.address="Pune";
+		
+		System.out.println("ROllNo = "+stu1.rollno +"  Name= "+ stu1.name +"  Address= "+ stu1.address  );
+		
+		Student stu2=new Student();
+		stu2.rollno=2;
+		stu2.name="Viaks";
+		stu2.address="Nashik";
+		System.out.println(stu2.rollno);
+		System.out.println(stu2.name);
+		System.out.println(stu2.address);
+		
+	}
+	
+}
+

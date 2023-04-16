@@ -1,0 +1,100 @@
+Scanner class:Scanner is predefinied class in java which is available in java.util package.
+Scanner class is used to take input from user.
+
+steps:
+
+1) If we want to use Scanner class  then we have to create object of Scanner class.
+
+ Scanner sc=new Scanner(System.in);
+
+2) Import scannner class from java.util package.
+
+import java.util.Scanner;
+
+3)Methods in scanner class.
+
+1)nextInt();
+2)nextByte();
+3)nextDouble();
+4)nextfloat();
+
+
+4) wrong input (Input mismatch Exception)
+
+
+Example:
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class IntDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter int  value");
+
+		int a = sc.nextInt();
+
+		System.out.println("int value is:" + a);
+	}
+}
+
+
+2)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class FloatDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter float value");
+		
+		float no = sc.nextFloat();
+		
+		System.out.println("float value is:"+ no);
+		
+	}
+}
+
+
+3)
+
+package takingDiffrentInputs;
+
+import java.util.Scanner;
+
+public class DoubleDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter double value");
+
+		double d = sc.nextDouble();
+		
+		System.out.println("Double value is:"+d);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

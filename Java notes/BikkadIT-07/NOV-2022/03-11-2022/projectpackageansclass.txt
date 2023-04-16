@@ -1,0 +1,67 @@
+
+1)
+package computer;
+
+public class C {
+
+	public static void main(String args[]) {
+		System.out.println("C Book");
+	}
+}
+
+2)
+
+package computer;
+
+public class Java {
+
+	public static void main(String args[]) {
+		System.out.println("java Book");
+	}
+}
+
+3)
+package electronics;
+
+public class DigitalElectronics {
+
+	public static void main(String args[]) {
+		System.out.println("Digital Electronic Book");
+	}
+}
+
+4)
+
+package electronics;
+
+public class EDC {
+
+	public static void main(String args[]) {
+		System.out.println("EDC Book");
+	}
+}
+
+
+5)
+
+package mechanical;
+
+public class SOM {
+
+	public static void main(String[] args) {
+		
+		System.out.println("SOM Book");
+	}
+}
+
+6)
+
+package mechanical;
+
+public class TOM {
+
+	public static void main(String[] args) {
+		
+		System.out.println("TOM Book");
+	}
+}

@@ -1,0 +1,98 @@
+1) Method calling in same package
+
+package methodcalling;
+
+public class Demo1 {
+
+	public void add() {
+	int a=11;
+	int b=22;
+	int c=a+b;
+	System.out.println(c);
+	}
+	
+	public static void main(String[] args) {
+		
+		Demo1 d1=new Demo1();
+		d1.add();
+	}
+	
+}
+
+
+
+package methodcalling;
+
+public class Demo2 {
+
+	
+	public void sub() {
+		int a=10;
+		int b=20;
+		int c=a-b;
+		System.out.println(c);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		Demo2 d2=new Demo2();
+		d2.sub();
+	
+		Demo1 d1=new Demo1();
+		d1.add();
+}
+}
+
+
+2) Method calling in diffrent packages .
+
+
+
+package methodcalling1;
+
+public class Demo3 {
+
+	public void mul() {
+		
+		int a=20;
+		int b=2;
+		int c=a*b;
+		System.out.println(c);
+	}
+	
+	public static void main(String[] args) {
+		
+		Demo3 d3=new Demo3();
+		d3.mul();
+		
+	}
+}
+
+
+
+package methodCalling2;
+
+import methodcalling1.Demo3;
+
+public class Demo4 {
+
+	
+	public void div() {
+		int a=90;
+		int b=10;
+		int c=a/b;
+		System.out.println(c);
+	}
+	
+	public static void main(String[] args) {
+		
+		Demo4 d4=new Demo4();
+		d4.div();
+		
+		Demo3 d3=new Demo3();
+		d3.mul();
+	}
+}
+
+

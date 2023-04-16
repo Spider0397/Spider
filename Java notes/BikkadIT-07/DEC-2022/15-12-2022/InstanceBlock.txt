@@ -1,0 +1,49 @@
+Instace Block: Instance block is similar to method which has no name.
+when we create object at that time instance block gets executed.
+
+Syntax:
+
+{
+---
+---
+}
+
+Example 1:
+
+package instanceBlock;
+
+public class InstanceDemo {
+
+	{
+		System.out.println("Instance block");
+	}
+
+	public static void main(String[] args) {
+
+		InstanceDemo id = new InstanceDemo();
+
+	}
+}
+
+
+Example :
+
+
+package instanceBlock;
+
+public class InstanceDemo {
+
+	{
+		System.out.println("Instance block");
+	}
+
+	public static void main(String[] args) {
+
+		InstanceDemo id = new InstanceDemo();
+		
+		InstanceDemo id1=new InstanceDemo();
+		
+
+	}
+}
+

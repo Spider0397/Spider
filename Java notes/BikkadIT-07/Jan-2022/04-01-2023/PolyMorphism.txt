@@ -1,0 +1,166 @@
+PolyMorphism: One name many forms .
+
+Example : Person -Employee
+                 -Customer
+                 -Friend
+
+"Same Object having diffrent behaviour is called as polymorphism".
+
+Types Of Ploymorphism:
+
+1)CompileTime polymorphism./early binding/static polymorphism/Overloading.
+2)RunTime PolyMorphism./late Binding/Dynamic Polymorphism/Overriding.
+
+1)CompileTime polymorphism./early binding/static polymorphism/Overloading:
+
+Example : Method Overloading.
+
+Method Overloading: Whenever class contain more than one method with same name and
+arguments/parameters are diffrent is called as Method overloading.
+
+Example :
+
+package polymorphism;
+
+public class MethodOverloadingDemo {
+
+	public void m1() {
+		System.out.println("This is m1 method");
+	}
+
+	public void m1(String name) {
+		System.out.println("My name is " + name);
+	}
+	
+	public void m1(String fname,String lname) {
+		System.out.println("My name is "+fname +" "+lname);
+	}
+
+	public void m1(String fname,String lname,int age) {
+		System.out.println("My name is "+fname +" "+lname +"And My age is"+age);
+	}
+	
+	
+	public static void main(String[] args) {
+
+		MethodOverloadingDemo mld = new MethodOverloadingDemo();
+		mld.m1();
+		mld.m1("Santosh");
+		mld.m1("Santosh", "Bikkad");
+		mld.m1("Santosh", "Bikkad",29);
+	}
+}
+
+
+
+
+Example :
+
+package polymorphism;
+
+public class MethodOverloadingDemo {
+
+	public void add(int a, int b) {
+		
+		int c = a + b;
+		System.out.println(c);
+	}
+
+	
+public void add(int a, int b,int c) {
+		
+		int d = a + b +c;
+		System.out.println(d);
+	}
+
+	public static void main(String[] args) {
+
+		MethodOverloadingDemo mld=new MethodOverloadingDemo();
+		mld.add(23, 40);
+		mld.add(23, 40,80);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Method Overriding: Whenever we writting method in super class and sub class in such way that
+method name and method parameter must be same is called as method overriding.
+
+
+Example :  Simple Inheritance
+
+package polymorphism;
+
+public class Parent {
+
+	
+	public void m1() {
+		System.out.println("m1 method of Parent class");
+	}
+}
+
+
+package polymorphism;
+
+public class Child extends Parent {
+
+	public void m2() {
+		System.out.println("child class m2 method");
+	}
+	
+	public static void main(String[] args) {
+		
+		Parent p=new Parent();
+		p.m1();
+		//p.m2();
+	
+		
+		Child c=new Child();
+		c.m1();
+		c.m2();
+		
+		Parent p1=new Child();
+		p1.m1();
+	//	p1.m2();
+		
+		//Child c=new Parent();
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

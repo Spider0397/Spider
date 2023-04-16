@@ -1,0 +1,257 @@
+Example 1: Taking user input in method
+
+package method;
+
+import java.util.Scanner;
+
+public class ASMD {
+
+	public void add() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a + b;
+		System.out.println("Addition :" + c);
+	}
+
+	public void sub() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a - b;
+		System.out.println("Substraction :" + c);
+	}
+
+	public void mul() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a * b;
+		System.out.println("Mul:" + c);
+	}
+
+	public void div() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of x ");
+		int x = sc.nextInt();
+		System.out.println("Enter value of y");
+
+		int y = sc.nextInt();
+		int z = x / y;
+		System.out.println("div=" + z);
+
+	}
+
+	public static void main(String[] args) {
+
+		ASMD asmd = new ASMD();
+		asmd.add();
+		asmd.sub();
+		asmd.mul();
+		asmd.div();
+	}
+}
+
+
+
+
+
+
+
+Example 1:
+
+
+package method;
+
+import java.util.Scanner;
+
+public class MethodDemo {
+
+	public static void add() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of a");
+		int a = sc.nextInt();
+
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+
+		int c = a + b;
+		System.out.println("Addition of a and b =" + c);
+	}
+
+	public static void main(String[] args) {
+System.out.println("Main Method started");
+		
+        MethodDemo.add();
+
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+
+		  MethodDemo.add();
+
+
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+
+		  MethodDemo.add();
+
+		
+		System.out.println("Main Method Ended");
+	}
+
+}
+
+
+
+Example 2:
+
+
+package method;
+
+import java.util.Scanner;
+
+public class ASMD {
+
+	public static void add() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a + b;
+		System.out.println("Addition :" + c);
+	}
+
+	public static void sub() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a - b;
+		System.out.println("Substraction :" + c);
+	}
+
+	public static void mul() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a * b;
+		System.out.println("Mul:" + c);
+	}
+
+	public static void div() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of x ");
+		int x = sc.nextInt();
+		System.out.println("Enter value of y");
+
+		int y = sc.nextInt();
+		int z = x / y;
+		System.out.println("div=" + z);
+
+	}
+
+	public static void main(String[] args) {
+ 
+		ASMD.add();
+		ASMD.sub();
+		ASMD.mul();
+		ASMD.div();
+	
+	}
+}
+
+
+
+
+
+Example :
+
+
+package method;
+
+import java.util.Scanner;
+
+public class ASMD {
+	
+	
+	Scanner sc = new Scanner(System.in);
+
+	public  void add() {
+
+	
+		System.out.println("enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a + b;
+		System.out.println("Addition :" + c);
+	}
+
+	public void sub() {
+		
+		System.out.println("Enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a - b;
+		System.out.println("Substraction :" + c);
+	}
+
+	public void mul() {
+
+		
+		System.out.println("Enter value of a");
+		int a = sc.nextInt();
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+		int c = a * b;
+		System.out.println("Mul:" + c);
+	}
+
+	public void div() {
+
+		
+		System.out.println("Enter value of x ");
+		int x = sc.nextInt();
+		System.out.println("Enter value of y");
+
+		int y = sc.nextInt();
+		int z = x / y;
+		System.out.println("div=" + z);
+
+	}
+
+	public static void main(String[] args) {
+ 
+	ASMD asmd=new ASMD();
+	asmd.add();
+	asmd.sub();
+	asmd.mul();
+	asmd.div();
+	
+	}
+}
+

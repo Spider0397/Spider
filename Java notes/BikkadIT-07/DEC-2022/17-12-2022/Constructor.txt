@@ -1,0 +1,123 @@
+Constructor: It is used to initialize object.
+             Constructor name is same as class Name.
+             Every java class has constructor.
+             In every constructor  there is super keyword.
+             Constructor is called when we create object.
+             Constructor doesnt contain return type.
+
+Example 1:
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+	
+	public static void main(String[] args) {
+		
+		Student stu=new Student();
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+		
+	}
+}
+
+
+Example 2:
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	public Student() {
+		super();
+		
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+	}
+}
+
+
+Example 3:
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	public Student() {
+		super();
+		System.out.println("Constructor ");
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+	}
+}
+
+
+Example 4:
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	public Student() {
+		super();
+		rollno=11;
+		name="Santosh";
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+	}
+}
+
+
+Example 5:
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	public Student() {
+		super();
+		rollno=0;
+		name=null;
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+	}
+}
+

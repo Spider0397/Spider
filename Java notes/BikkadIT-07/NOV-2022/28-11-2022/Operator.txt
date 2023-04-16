@@ -1,0 +1,368 @@
+Opearator: Operator is symbol which is used to perform operation according to user requirment.
+
+Types Of Operator:
+
+1)Arithmetic operator(+,-,*,/,%)
+
+2)Relational Operator(>,<,>=,<=,!=,==)
+
+3)Increament/Decreament Operator
+
+   1)Increamnet Operator
+      i)Pre Increament
+     ii)Post Increament
+
+  2)Decreament Operator
+    i)Pre Decreament
+    ii)Post Decreament
+
+4)Assignment Operator
+  
+   1)Simple Assignment
+   2)Compound Assignment
+
+5)Ternary Operator(? :)
+
+6)Logical Operator(&&,||,!)
+
+7)Bitwise Operator(AND,OR,XOR,Complement)
+
+
+
+
+1)Arithmetic operator(+,-,*,/,%):
+================================
+
+
+package typesOfOperator;
+
+public class ArithmeticOperator {
+
+	
+	public static void main(String[] args) {
+		
+		System.out.println("+ operator");
+		int a=10;
+		int b=20;
+		int c=a+b;
+		System.out.println("Addition of a and b is :"+c);
+		
+		System.out.println("- operator");
+		
+		int p=20;
+		int q=10;
+		int r=p-q;
+		System.out.println("Sub of p and q is:"+r);
+		
+		System.out.println("* operator");
+		
+		int x=10;
+		int y=2;
+		int z=x*y;
+		System.out.println("Mul of x And y is:"+ z);
+		
+		System.out.println("/ operator");
+		int e=21;
+		int f=2;
+		int g=e/f;
+		System.out.println("div of e and f is:"+g);
+		
+		System.out.println("% operator");
+		
+		int s=13;
+		int t=2;
+		int u=s % t;
+		System.out.println("mod of s and t is:"+u);
+		
+		
+	}
+}
+
+
+
+2)Relational Operator(>,<,>=,<=,!=,==):
+
+
+
+
+package typesOfOperator;
+
+public class RelationalOperator {
+
+	public static void main(String[] args) {
+
+		System.out.println("> operator");
+
+		int a = 20;
+		int b = 10;
+		System.out.println("> operator : " + (a > b));
+
+		System.out.println("< operator");
+		int c = 10;
+		int d = 20;
+		System.out.println("< operator :" + (c < d));
+
+		System.out.println(">= operator");
+
+		int x = 20;
+		int y = 20;
+		System.out.println(">= operator :" + (x >= y));
+
+		System.out.println("<= operator");
+		int p = 11;
+		int q = 11;
+		System.out.println("<= operator:" + (p <= q));
+
+		System.out.println("== operator");
+		int e = 88;
+		int f = 88;
+		System.out.println("== operator :" + (e == f));
+
+		System.out.println(" != operator");
+		int g = 56;
+		int h = 56;
+
+		System.out.println(" != operator :" + (g != h));
+	}
+
+}
+
+
+
+3)Increament/Decreament Operator
+
+   1)Increamnet Operator
+      i)Pre Increament
+     ii)Post Increament
+
+  2)Decreament Operator
+    i)Pre Decreament
+    ii)Post Decreament
+
+
+
+   1)Increamnet Operator
+      i)Pre Increament
+     ii)Post Increament
+
+
+
+   i)Pre Increament:
+  =================
+
+ Example :
+
+package prePostIncOperator;
+
+public class PreIncOperator {
+
+	public static void main(String[] args) {
+		
+		int a=10;
+		System.out.println(++a);
+		
+	}
+}
+
+
+
+ ii)Post Increament
+====================
+
+Example :
+
+
+package prePostIncOperator;
+
+public class PostInc {
+
+	public static void main(String[] args) {
+		
+		int a=10;
+		System.out.println(a++);
+		System.out.println(a);
+	}
+}
+
+
+
+  2)Decreament Operator
+    i)Pre Decreament
+    ii)Post Decreament
+
+i)Pre Decreament:
+================
+
+Example ;
+
+package prePostDec;
+
+public class PreDec {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		System.out.println(--a);
+	}
+}
+
+ii)Post Decreament:
+
+Example :
+
+
+package prePostDec;
+
+public class PostDec {
+
+	public static void main(String[] args) {
+		
+		int a=10;
+		System.out.println(a--);
+		System.out.println(a);
+	}
+}
+
+
+
+Example :
+
+
+package prePostIncOperator;
+
+public class PrePostIncAndPrePostDec {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+
+		System.out.println(a++);
+		
+		System.out.println(a);
+		
+		System.out.println(++a);
+		
+		System.out.println(a--);
+		
+		System.out.println(a);
+		
+		System.out.println(--a);
+		
+		
+	}
+}
+
+
+
+
+6)Logical Operator(&&,||,!)  :
+=============================
+
+
+
+Java Logical Operators
+Logical operators are used to check whether an expression is true or false. They are used in decision making.
+
+Operator	         Example	                                      Meaning
+&& (Logical AND)	expression1 && expression2	   true only if both expression1 and expression2 are true
+|| (Logical OR)	        expression1 || expression2	   true if either expression1 or expression2 is true
+! (Logical NOT)   	!expression	                    true if expression is false and vice versa
+
+
+1)Logical AND Operator:
+
+
+expression1        Expression2            Result
+
+true               true                   true
+false              true                   false
+true               false                  false
+false              false                  false
+
+
+Example :
+
+package logicalOperators;
+
+public class LogicalAnd {
+
+	public static void main(String[] args) {
+		
+		int a=10;
+		int b=20;
+		
+	    System.out.println((a<b) && (a<b));
+	    System.out.println((a>b) && (a<b));
+	    System.out.println((a<b) && (a>b));
+	    System.out.println((a>b) && (a>b));
+	}
+	
+	
+}
+
+
+
+
+2)Logical OR Operator:
+
+
+expression1        Expression2            Result
+
+true               true                   true
+false              true                   true
+true               false                  true
+false              false                  false
+
+
+Example :
+
+package logicalOperators;
+
+public class LogicalOR {
+
+	public static void main(String[] args) {
+		
+		int a=10;
+		int b=20;
+		
+		System.out.println((a<b) || (a<b));
+		System.out.println((a>b) || (a<b));
+		System.out.println((a<b) || (a>b));
+		System.out.println((a>b) || (a>b));
+	}
+}
+
+
+
+3)Logical NOT Operator:
+
+expression   result
+
+true         false
+false        true
+
+
+Example :
+
+package logicalOperators;
+
+public class LogicalNot {
+
+	public static void main(String[] args) {
+		
+	
+	int a=10;
+	int b=20;
+	
+	
+	System.out.println( !(a>b));
+	System.out.println( !(a<b));
+	
+	}
+}
+
+
+
+
+
+

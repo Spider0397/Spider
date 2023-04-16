@@ -1,0 +1,157 @@
+Method: It is group or block of code.
+
+Syntax : Access_Modifier return_Type  methodName(Arguments/Parameters){
+--------
+--------
+}
+
+Advatages :
+
+1)Incraese Readability of code.
+2)Decrease line of code.
+
+Example :
+
+package method;
+
+public class MethodDemo {
+
+	public void add() {
+		int a = 10;
+		int b = 20;
+		int c = a + b;
+		System.out.println("Addition of a and b =" + c);
+	}
+
+	public static void main(String[] args) {
+
+		MethodDemo m = new MethodDemo();
+		m.add();
+		
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		
+		MethodDemo d1=new MethodDemo();
+		d1.add();
+		
+
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		
+		MethodDemo d2=new MethodDemo();
+		d2.add();
+	}
+
+}
+
+
+Example 2:
+
+package method;
+
+public class ASMD {
+
+	public void add() {
+		int a = 10;
+		int b = 20;
+		int c = a + b;
+		System.out.println("Addition :" + c);
+	}
+
+	public void sub() {
+		int a = 20;
+		int b = 10;
+		int c = a - b;
+		System.out.println("Substraction :" + c);
+	}
+	
+	public void mul() {
+		int a=10;
+		int b=20;
+		int c=a*b;
+		System.out.println("Mul:"+c);
+	}
+	
+	
+	public void div() {
+		int x=20;
+		int y=10;
+		int z=x/y;
+		System.out.println("div="+z);
+		
+	}
+
+	public static void main(String[] args) {
+
+		ASMD asmd = new ASMD();
+		asmd.add();
+		asmd.sub();
+		asmd.mul();
+		asmd.div();
+	}
+}
+
+
+Example 3:
+
+
+package method;
+
+import java.util.Scanner;
+
+public class MethodDemo {
+
+	public void add() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of a");
+		int a = sc.nextInt();
+
+		System.out.println("Enter value of b");
+		int b = sc.nextInt();
+
+		int c = a + b;
+		System.out.println("Addition of a and b =" + c);
+	}
+
+	public static void main(String[] args) {
+
+		MethodDemo m = new MethodDemo();
+		m.add();
+
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+
+		MethodDemo d1 = new MethodDemo();
+		d1.add();
+
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+		System.out.println("Welcome To Bikkad IT");
+
+		MethodDemo d2 = new MethodDemo();
+		d2.add();
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

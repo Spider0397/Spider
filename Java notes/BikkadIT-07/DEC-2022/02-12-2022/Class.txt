@@ -1,0 +1,58 @@
+Class: It is the collection of variables ,methods and objects.
+=====
+Example :Demo ,Test,Animal etc.
+
+Syntax :  Access_Modifier class Class_name{
+
+           //variables
+           // methods
+           // objects
+            }
+
+Access Modifier : dafault,public.
+
+class : It is keyword.It is used to create class.
+
+Class_name : Class name always starts from Capital letter.
+
+Body : The clasc body is surrounded with { }.
+
+
+Example :
+
+package classTypes;
+
+public class Animal {
+
+	String name="Lion";  // variable
+	
+	public void eat() { // method
+		System.out.println("Lion is eating");
+	}
+	
+	public static void main(String[] args) {
+		
+		Animal animal=new Animal(); // object
+		System.out.println(animal.name);
+		animal.eat();
+	}
+}
+
+
+
+
+There are two types of Class:
+
+1)Predefined class.
+
+2)Userdefinied class.
+
+
+1)Predefined class: The classes which are written by java is called as predefinied classes.
+
+Example : Scanner ,System ,String etc.
+
+2) Userdefinied class: The classes which are written by user or programmer is called as UserDefinied classes.
+
+Example : Animal ,Demo ,Test.
+

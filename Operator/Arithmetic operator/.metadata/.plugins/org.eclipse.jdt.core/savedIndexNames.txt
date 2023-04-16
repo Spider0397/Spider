@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+F:\CorejavaWorkspace\Operator\Arithmetic operator\.metadata\.plugins\org.eclipse.jdt.core
+966638706.index
+1865797976.index
+1039032859.index

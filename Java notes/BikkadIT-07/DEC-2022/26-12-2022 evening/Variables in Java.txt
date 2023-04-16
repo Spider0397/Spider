@@ -1,0 +1,151 @@
+Variable: Variable is the name of memeory location.
+It is userdefinied name given by user.
+varibles can store any type of value.
+
+Types of Variables:
+
+1)Local Variable.
+2)Instance Variable.
+3)Static Variable.
+
+1) Local Variable: A variable which is declared inside 
+body of method is called as local variable.
+
+
+Example :
+
+package variable;
+
+public class LocalVariable {
+
+	public void show() {
+
+		int a = 50;
+		System.out.println(a);
+
+	}
+
+	public static void main(String[] args) {
+
+		LocalVariable lc = new LocalVariable();
+		lc.show();
+	}
+}
+
+
+
+
+
+2) Instance Variable: A variable which is declared inside body of class and outside method is 
+ called as Instance variable.
+
+Example :
+
+package variable;
+
+public class InstanceVariable {
+
+	int a = 40;
+
+	public void show() {
+
+		System.out.println(a);
+
+	}
+
+	public static void main(String[] args) {
+		InstanceVariable iv=new InstanceVariable();
+		iv.show();
+		System.out.println(iv.a);
+		
+	}
+}
+
+
+
+3) static variable: A variable which is declared inside class and outside the method
+ with the help of static keyword.
+
+Example :
+
+package variable;
+
+public class InstanceVariable {
+
+	static int a = 40;
+
+	public void show() {
+
+	}
+
+	public static void main(String[] args) {
+	
+		System.out.println(InstanceVariable.a);
+		
+	}
+}
+
+
+
+Example : INstace variables we can can access only in non static area but static variables 
+   we can access in static and non static area.
+
+package variable;
+
+public class InstanceVariable {
+
+	static int s = 40;
+    int i=90;
+	public void show() {
+		System.out.println(i);
+		System.out.println(s);
+	}
+
+	public static void display() {
+       System.out.println(s);
+     //  System.out.println(i);
+	}
+
+	public static void main(String[] args) {
+
+		InstanceVariable iv=new InstanceVariable();
+		iv.show();
+		
+		InstanceVariable.display();
+		
+		
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Diffrence Between instance variable and static variable:
+
+1)Instance variables are declared in a class, but outside a method, constructor or any block.
+
+2)static variables also known as Class variables are declared with the static keyword in a class, 
+but outside a method, constructor or a block.
+
+2) Instance variables are created when an object is created with the use of 
+the keyword 'new' and destroyed when the object is destroyed.
+
+2)Static variables are created when the program starts and destroyed when the program stops.
+
+3)Instance variables we can call by using object referance.
+
+3)Static variables can be accessed by calling with the class name ClassName.VariableName.

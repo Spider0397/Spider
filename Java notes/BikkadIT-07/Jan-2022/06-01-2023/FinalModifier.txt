@@ -1,0 +1,187 @@
+Final Modifier: Final Modifier is mainly used for provide restriction.
+
+Final modifier we can use with 
+
+1)final with variable
+2)final with method
+3)Final with class.
+
+1)final With variable : Once we declare variable as final then we cant perfornm any changes into that variable.
+
+Example :
+
+package finalModifier;
+
+public class FinalVariableDemo {
+
+	public static void main(String[] args) {
+
+		final int a = 10;
+		System.out.println(a);
+
+		a = 20;
+		System.out.println(a);
+
+	}
+}
+
+
+
+
+
+2)final with method:  Once we declare method as final then we cant override that method into extended class.
+===================
+
+
+Example :
+
+package finalModifier;
+
+public class Parent {
+
+	public final void m1() {
+		System.out.println("m1 method of Parent class");
+	}
+}
+
+
+package finalModifier;
+
+public class Child  extends Parent{
+
+	public void m1() {
+		System.out.println("m method of Child class");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	Child c=new Child();
+	c.m1();
+		
+	}
+	
+}
+
+
+
+3)Final with class: If we make class as final then we cant inherit that class.
+===================
+
+package finalModifier;
+
+public final class Parent {
+
+	
+}
+
+
+
+package finalModifier;
+
+public class Child  extends Parent{
+
+	
+
+		
+	}
+	
+
+
+
+
+
+
+
+
+
+note : we can overload final methods
+
+
+package polymorphism;
+
+public class MethodOverloadingDemo {
+
+	public final  void add(int a, int b) {
+		
+		int c = a + b;
+		System.out.println(c);
+	}
+
+	
+public  final void add(int a, int b,int c) {
+		
+		int d = a + b +c;
+		System.out.println(d);
+	}
+
+	public static void main(String[] args) {
+
+		MethodOverloadingDemo mld=new MethodOverloadingDemo();
+		mld.add(23, 40);
+		mld.add(23, 40,80);
+	}
+
+}
+
+
+Note : private methods we cant override
+
+Example :
+
+
+
+package finalModifier;
+
+public class Parent {
+
+	private  void m1() {
+		System.out.println("m1 method of Parent class");
+	}
+}
+
+
+package finalModifier;
+
+public class Child  extends Parent{
+
+	public void m1() {
+		System.out.println("m method of Child class");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	Child c=new Child();
+	c.m1();
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

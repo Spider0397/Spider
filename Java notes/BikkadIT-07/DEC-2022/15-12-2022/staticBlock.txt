@@ -1,0 +1,67 @@
+Stack Block:
+static block gets executed at the time of loading .class file into jvm.
+static block gets exected only one time.
+
+Syntax:
+
+static {
+----------
+----------
+}
+
+Example :
+
+package statiblockExample;
+
+public class StaticDemo {
+
+	static {
+		System.out.println("Static block");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+Example :
+
+package statiblockExample;
+
+public class StaticDemo {
+
+	static {
+		System.out.println("Static block");
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		StaticDemo sd=new StaticDemo();
+		
+	}
+}
+
+
+
+Example :
+
+package statiblockExample;
+
+public class StaticDemo {
+
+	static {
+		System.out.println("Static block");
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		StaticDemo sd=new StaticDemo();
+		
+		StaticDemo sd1=new StaticDemo();
+		
+	}
+}

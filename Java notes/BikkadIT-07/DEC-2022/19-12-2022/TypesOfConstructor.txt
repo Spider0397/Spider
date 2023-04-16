@@ -1,0 +1,202 @@
+Types Of Constructor :
+
+1)Default Constructor
+2)Parameterized Constructor
+3)Private Constructor
+4)Copy Constructor
+
+1)Default Constructor:
+===================
+
+Example :
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	public Student() {
+		rollno = 111;
+		name = "Santosh";
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+	}
+}
+
+
+
+2) Parameterized Constructor
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	public Student(int rollno, String name) {
+		this.rollno=rollno;
+		this.name=name;
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student(111, "Santosh");
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+	}
+}
+
+
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	public Student(int rollno, String name) {
+		this.rollno = rollno;
+		this.name = name;
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student(111, "Santosh");
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+		Student stu1 = new Student(222, "ganesh");
+		System.out.println(stu1.rollno);
+		System.out.println(stu1.name);
+	}
+}
+
+
+
+3) private Constructor: When we make consructor as private then it is not possible to make object of that class into another class.
+======================
+
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	private Student() {
+		System.out.println("Student class Constructor");
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+
+	}
+}
+
+
+package constructor;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Student stu1=new Student();
+	}
+}
+
+
+
+4)Copy Constructor :
+===================
+
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	Student() {
+
+	}
+
+	Student(Student stu) {
+		this.rollno = stu.rollno;
+		this.name = stu.name;
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+		Student stu1 = new Student(stu);
+		System.out.println(stu1.rollno);
+		System.out.println(stu1.name);
+
+	}
+}
+
+
+
+Example :
+
+
+package constructor;
+
+public class Student {
+
+	int rollno;
+	String name;
+
+	Student() {
+
+	}
+
+	Student(Student stu) {
+		this.rollno = stu.rollno;
+		this.name = stu.name;
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.rollno = 111;
+		stu.name = "Santosh";
+		System.out.println(stu.rollno);
+		System.out.println(stu.name);
+
+		Student stu1 = new Student(stu);
+		System.out.println(stu1.rollno);
+		System.out.println(stu1.name);
+
+		Student stu2 = new Student(stu);
+		System.out.println(stu2.rollno);
+		System.out.println(stu2.name);
+	}
+}
+
+
+
+
+
+
+
+

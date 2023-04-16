@@ -1,0 +1,258 @@
+OOPS:Object Oriented Programming System.
+Tha main aim of OOPS is to deal with real world entity using progamming language.
+
+Features Of OOPS:
+===============
+
+1)Class
+2)Object
+3)Inheritance
+4)Polymorphism
+5)Abstraction
+6)Encapulation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3)Inheritance:When we want to access all the properties of one class into another
+then we should go for inheritance .
+
+Syntax:  public class Parent{
+     ----------
+     ---------- 
+     }
+     public class Child extends Parent{
+     -----------
+     ----------
+     }
+
+Note :1) In java extends keyword is used to perform inheritance.
+      2) Inheritance provides code reusuability.
+      3) Inheritance is called as IS-A relationship.
+      4) We can not access private members of parent class into child class
+         through inheritance .
+      5) A child class contains all the properties of parent class so create object
+       of Child class.
+      6)Method overriding is only possible through inheritance.****
+
+
+
+Exmple :
+
+
+package inheritance;
+
+public class Parent {
+
+	int p=500;
+	
+	int q=2000;
+	
+	public void add() {
+		int a=10;
+		int b=20;
+		int c=a+b;
+		System.out.println(c);
+	}
+	
+	public void mul() {
+		int x=20;
+		int y=10;
+		int z=x *y;
+		System.out.println(z);
+	}
+	
+	
+}
+
+
+package inheritance;
+
+public class Child extends Parent {
+
+	public void sub() {
+		int a = 20;
+		int b = 10;
+		int c = a - b;
+		System.out.println(c);
+	}
+
+	public static void main(String[] args) {
+
+		Child c = new Child();
+		c.sub();
+		c.add();
+		c.mul();
+		System.out.println(c.p);
+		System.out.println(c.q);
+
+	}
+
+}
+
+ 
+
+
+Example 2:
+
+package inheritance;
+
+public class Parent {
+
+	int p=500;
+	
+	int q=2000;
+	
+	public void add() {
+		int a=10;
+		int b=20;
+		int c=a+b;
+		System.out.println(c);
+	}
+	
+	public void mul() {
+		int x=20;
+		int y=10;
+		int z=x *y;
+		System.out.println(z);
+	}
+	
+	
+}
+
+
+
+package inheritance;
+
+public class Child extends Parent {
+
+	public void sub() {
+		int a = 20;
+		int b = 10;
+		int c = a - b;
+		System.out.println(c);
+	}
+
+	public static void main(String[] args) {
+
+		
+		Parent p=new Parent();
+		p.add();
+		p.mul();
+		//p.sub();
+		
+		Child c = new Child();
+		c.sub();
+		c.add();
+		c.mul();
+		System.out.println(c.p);
+		System.out.println(c.q);
+
+		
+		Parent p1=new Child();
+		p1.add();
+		p1.mul();
+	//	p1.sub();
+		
+		
+	//	Child c1=new Parent();
+		
+	}
+
+}
+
+
+Example :   We can not access private members of parent class into child class
+         through inheritance .
+
+package inheritance;
+
+public class Parent {
+
+	int p=500;
+	
+	int q=2000;
+	
+	private void add() {
+		int a=10;
+		int b=20;
+		int c=a+b;
+		System.out.println(c);
+	}
+	
+	private void mul() {
+		int x=20;
+		int y=10;
+		int z=x *y;
+		System.out.println(z);
+	}
+	
+	
+}
+
+
+
+package inheritance;
+
+public class Child extends Parent {
+
+	public void sub() {
+		int a = 20;
+		int b = 10;
+		int c = a - b;
+		System.out.println(c);
+	}
+
+	public static void main(String[] args) {
+
+		
+		Parent p=new Parent();
+		p.add();
+		p.mul();
+		//p.sub();
+		
+		Child c = new Child();
+		c.sub();
+		c.add();
+		c.mul();
+		System.out.println(c.p);
+		System.out.println(c.q);
+
+		
+		Parent p1=new Child();
+		p1.add();
+		p1.mul();
+	//	p1.sub();
+		
+		
+	//	Child c1=new Parent();
+		
+	}
+
+}
+
+
+
+
+
+
+
+

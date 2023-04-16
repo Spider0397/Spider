@@ -1,0 +1,208 @@
+package division;
+
+public class ThreeNoDiv {
+
+	public static void main(String[] args) {
+
+		int a = 100;
+		int b = 10;
+		int c = 2;
+		int d = a / b / c;
+		System.out.println(d);
+	}
+}
+
+
+Token : Token is the smallest element of program.
+=====
+
+Example : public , int ,b etc.
+
+
+Types Of Tokens:
+
+1) keyword :
+
+Example : public ,static ,void etc
+
+2)Identifier
+
+Example : ThreeNoDiv , main,a,b,c etc.
+
+3)Seperator
+
+Example :-  ; ,{ ,} etc
+
+4)Operator 
+
+Example : = , / etc
+
+5)Literal :
+
+Example :
+
+10,100, 2 etc
+
+
+
+1) keyword : keywords are reserved words.
+===========
+
+Note : All keywords in java are lower case alphabets.
+
+
+keyword related to dataType(8);
+
+byte 
+short
+int 
+long
+float
+double
+char
+boolean
+
+keyword related to flow control(11):
+
+if
+else
+switch
+case
+default
+for
+do
+while
+break
+continue
+return
+
+
+
+Keyword related to Access Modifier(11);
+
+public 
+private
+protected
+static
+final
+abstract
+synchronized
+native
+strictfp(added in java 1.2 version)
+transient
+volatile
+
+keyword related to exception handling(6);
+
+try
+catch
+finally
+throw
+throws
+assert(added in java 1.4 version)
+
+
+class related keywords(6):
+
+class
+interface
+import
+extends
+implements
+package
+
+Object related keywords(4):
+
+new
+instanceOf
+super
+this
+
+remaining keywords (2)
+
+void 
+enum(added in java 1.5 version)
+
+
+
+2)Identifier: In java Identifier is the name of the class,name of the method, name of the variable which is used for the
+ identification purpose is called as identifier.
+
+Rules : 
+
+1)only allowed charactors in java for identifier are 
+
+a-z
+A-Z
+0-9
+_
+$
+
+
+Example :
+
+package rules;
+
+public class Rule1 {
+
+	public static void main(String[] args) {
+		
+		int AzZCca$_456=10;
+		System.out.println(AzZCca$_456);
+	}
+}
+
+
+2)Identifiers are not allwed to  start with digits.
+
+Example :
+
+
+
+package rules;
+
+public class Rule2 {
+
+	public static void main(String[] args) {
+		
+		int 8a=20;
+		System.out.println(a);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
